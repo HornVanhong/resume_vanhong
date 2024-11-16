@@ -31,6 +31,16 @@ $(document).ready(function () {
       setProgressBar("problem-solving-progress", 80);
       setProgressBar("khmer-progress", 100);
       setProgressBar("english-progress", 50);
+      setProgressBar("database-progress", 50); // Database (CRUD)
+      setProgressBar("flutter-progress", 70); // Flutter
+      setProgressBar("csharp-progress", 60); // C#
+      setProgressBar("git-progress", 80); // Git
+      setProgressBar("html-css-js-progress", 90); // HTML/CSS/JS
+      setProgressBar("figma-progress", 80); // Figma (UX/UI)
+      setProgressBar("java-progress", 65); // Java
+      setProgressBar("php-progress", 50); // PHP
+      setProgressBar("react-native-progress", 70); // React-Native
+      setProgressBar("react-js-progress", 70);
     });
     updateActiveLink("#skilllink");
   });

@@ -1,13 +1,85 @@
+/* General container for the page */
 .container {
   width: 80%;
   margin: 50px auto;
 }
 
+/* Icon styling directly applied to the FontAwesome icons */
+.fa-file-word {
+  color: #1a73e8; /* Word icon color */
+}
+
+.fa-file-excel {
+  color: #2f9d44; /* Excel icon color */
+}
+
+.fa-file-powerpoint {
+  color: #e00000; /* PowerPoint icon color */
+}
+
+.fa-comments {
+  color: #f5a623; /* Communication icon color */
+}
+
+.fa-users {
+  color: #f39c12; /* Teamwork icon color */
+}
+
+.fa-cogs {
+  color: #8e44ad; /* Problem-solving icon color */
+}
+
+.fa-database {
+  color: #0063b1; /* Database icon color */
+}
+
+.flutter-icon {
+  color: #45e2f7; /* Flutter icon color */
+}
+
+.fa-brands.fa-csharp {
+  color: #ff0000; /* C# icon color */
+}
+
+.fa-brands.fa-git-alt {
+  color: #f1502f; /* Git icon color */
+}
+
+.fa-code {
+  color: #e34c26; /* HTML/CSS/JS icon color */
+}
+
+.fa-figma {
+  color: #f24e1e; /* Figma icon color */
+}
+
+.fa-brands.fa-java {
+  color: #007396; /* Java icon color */
+}
+
+.fa-brands.fa-php {
+  color: #8993be; /* PHP icon color */
+}
+
+.fa-brands.fa-react {
+  color: #61dafb; /* React JS & React Native icon color */
+}
+
+.fa-language {
+  color: #008c45; /* Khmer language color */
+}
+
+.fa-globe {
+  color: #007bff; /* English language color */
+}
+
+/* Heading for the skills section */
 h1 {
   text-align: center;
   margin-bottom: 40px;
 }
 
+/* Section titles */
 .section-title {
   font-size: 24px;
   font-weight: bold;
@@ -15,6 +87,7 @@ h1 {
   color: #333;
 }
 
+/* Skills container for each section */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -22,6 +95,10 @@ h1 {
   margin-bottom: 40px;
 }
 
+.skill-label > img {
+  width: 30px;
+  aspect-ratio: 1;
+}
 .skill-section {
   background-color: #fff;
   padding: 20px;
@@ -32,8 +109,17 @@ h1 {
 .skill-label {
   font-size: 18px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
+/* Adding color to the icons */
+.skill-label i {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+/* Progress Bar container */
 .progress {
   width: 100%;
   background-color: #e0e0e0;
@@ -51,39 +137,77 @@ h1 {
   transition: width 1s ease-out; /* Smooth transition for the progress */
 }
 
-/* Microsoft Office Skills */
+/* Specific Background Colors for Skill Categories */
 .word {
-  background-color: #2c5894;
+  background-color: #2c5894; /* Word color */
 }
 
 .excel {
-  background-color: #17a676;
+  background-color: #17a676; /* Excel color */
 }
 
 .powerpoint {
-  background-color: #d9534f;
+  background-color: #d9534f; /* PowerPoint color */
 }
 
-/* Soft Skills */
 .communication {
-  background-color: #5bc0de;
+  background-color: #5bc0de; /* Communication color */
 }
 
 .teamwork {
-  background-color: #f0ad4e;
+  background-color: #f0ad4e; /* Teamwork color */
 }
 
 .problem-solving {
-  background-color: #d9534f;
+  background-color: #d9534f; /* Problem Solving color */
 }
 
-/* Languages */
+.database {
+  background-color: #3498db; /* Database color */
+}
+
+.flutter {
+  background-color: #f39c12; /* Flutter color */
+}
+
+.csharp {
+  background-color: #8e44ad; /* C# color */
+}
+
+.git {
+  background-color: #e74c3c; /* Git color */
+}
+
+.html-css-js {
+  background-color: #16a085; /* HTML/CSS/JS color */
+}
+
+.figma {
+  background-color: #2c3e50; /* Figma color */
+}
+
+.java {
+  background-color: #d35400; /* Java color */
+}
+
+.php {
+  background-color: #c0392b; /* PHP color */
+}
+
+.react-native {
+  background-color: #2980b9; /* React Native color */
+}
+
+.react-js {
+  background-color: #9b59b6; /* React JS color */
+}
+
 .khmer {
-  background-color: #ff5722;
+  background-color: #f39c12; /* Khmer color */
 }
 
 .english {
-  background-color: #3f51b5;
+  background-color: #16a085; /* English color */
 }
 
 /* Responsive Styles with max-width: 740px */
@@ -93,7 +217,8 @@ h1 {
   }
 
   .section-title {
-    font-size: 20px; /* Adjust font size of section title */
+    font-size: 16px; /* Adjust font size of section title */
+    text-align: center;
   }
 
   .skill-label {
