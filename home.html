@@ -1,0 +1,63 @@
+<div class="home-body">
+  <div class="body-con">
+    <div class="title-con">
+      <h1>Finance and Banking</h1>
+      <h2>
+        Hello, I’m Met Srey Nit. I am a Junior student in Finance and Banking. I
+        am currently learning and gaining experience in the field of finance,
+        with a focus on banking and financial systems.
+      </h2>
+      <div class="btn-con">
+        <button id="btn-hire" onclick="showPopup()">HIRE ME NOW</button>
+        <a
+          href="PDF/CV MAT SREYNIT.pdf"
+          download="CV MAT SREYNIT"
+          id="btn-download"
+        >
+          <button id="btn-download">DOWNLOAD CV</button>
+        </a>
+      </div>
+    </div>
+    <div class="img-con"><img src="Image/Nit.jpg" alt="" /></div>
+  </div>
+</div>
+
+<!-- The Modal (Popup) -->
+<div id="hire-popup" class="popup">
+  <div id="popup-content" class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Hire Me</h2>
+    <p>Please fill out the form below to hire me:</p>
+
+    <form id="hire-form" onsubmit="return false;">
+      <label for="name">Your Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label for="email">Your Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <label for="message">Your Message:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Enter your message"
+        required
+      ></textarea
+      ><br /><br />
+
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>

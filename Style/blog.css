@@ -1,0 +1,91 @@
+/* Blog Container with Grid Layout */
+.blog-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Blog Post */
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* Title of the Blog */
+.title-blog {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Blog Content */
+.content-blog {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Blog Image */
+.image-blog {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  overflow: hidden; /* Prevents image overflow when zooming */
+  border-radius: 8px;
+}
+
+.image-blog img {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.image-blog:hover img {
+  transform: scale(1.05); /* Zoom in the image */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px; /* Enhance shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .blog-container {
+    width: 90%;
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+
+  .title-blog {
+    font-size: 28px;
+  }
+
+  .content-blog {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 740px) {
+  .blog-container {
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: 1fr; /* Stack columns on very small screens */
+  }
+
+  .title-blog {
+    font-size: 24px;
+  }
+
+  .content-blog {
+    font-size: 14px;
+  }
+}

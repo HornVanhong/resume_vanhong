@@ -1,0 +1,166 @@
+.work-body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards; /* Fade in animation */
+}
+
+#work-experience h1 {
+  font-size: 36px;
+  text-align: center;
+  opacity: 0;
+  animation: slideIn 1s ease-out 0.5s forwards; /* Slide in from top */
+}
+
+/* Work Container Grid */
+.work-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Content takes more space than the image */
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out 1s forwards; /* Fade in and slide up */
+}
+
+/* Work Content Styling */
+.work-content {
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  animation: fadeInLeft 1s ease-out 1.5s forwards; /* Fade in from left */
+}
+
+.work-content span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0078d7;
+}
+
+.work-content p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.dates {
+  font-weight: 600;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.work-content p:last-child {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Image Styling */
+.work-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInRight 1s ease-out 1.5s forwards; /* Fade in from right */
+}
+
+.work-image img {
+  width: 100%;
+  max-width: 300px; /* Ensure image doesn't stretch too much */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+}
+
+/* Responsive Design for max-width 740px */
+@media (max-width: 740px) {
+  .work-image img {
+    max-width: 100%; /* Allow the image to resize within its column */
+    height: auto;
+  }
+
+  .work-container {
+    grid-template-columns: 1fr; /* Stack content and image vertically on small screens */
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .work-content {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  #work-experience h1 {
+    font-size: 28px; /* Adjust heading size */
+  }
+}
+
+/* Responsive Design for smaller screens */
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
