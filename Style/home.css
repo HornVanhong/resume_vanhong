@@ -94,9 +94,26 @@ button {
 button:hover {
   background-color: #139c92; /* Darker shade of green */
 }
+.div-proj {
+  margin-left: 120px;
+  margin-top: 20px;
+}
+#btn-proj {
+  background-color: dodgerblue;
+  color: white;
+  border-color: black;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .div-proj {
+    margin-left: 0; /* Center the button */
+    margin-top: 10px; /* Reduce top margin */
+    text-align: center; /* Align text within the button */
+    width: 80%; /* Adjust width to fit smaller screens */
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 10px; /* Add padding for touch-friendly design */
+  }
   .popup-content {
     width: 80%; /* Use 80% of the width on smaller screens */
     max-height: 300px; /* Reduced max-height on smaller screens */
@@ -257,6 +274,11 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 740px) {
+  .div-proj {
+    width: 100%; /* Use full width for very small screens */
+    font-size: 12px; /* Further reduce font size */
+    padding: 8px; /* Adjust padding */
+  }
   .popup-content {
     max-height: 400px;
   }
